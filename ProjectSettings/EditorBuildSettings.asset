@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/PenguinScene.unity
+    guid: a59272c9b7b72294381583b5e53d9742
   m_configObjects: {}
