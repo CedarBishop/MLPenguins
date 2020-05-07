@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using MLAgents;
-using TMPro;
+using UnityEngine.UI;
 
 public class PenguinArea : MonoBehaviour
 {
@@ -10,7 +10,7 @@ public class PenguinArea : MonoBehaviour
 
     public GameObject penguinBaby;
 
-    public TextMeshPro rewardText;
+    public Text rewardText;
 
     public Fish fishPrefab;
 
@@ -106,9 +106,11 @@ public class PenguinArea : MonoBehaviour
                 Quaternion.Euler(0.0f, Random.Range(0.0f, 360.0f) , 0.0f)
                 );
 
+            fish.transform.SetParent(transform);
+
             fishes.Add(fish.gameObject);
 
-            //fish.fishSpeed = fishSpeed;
+            fish.fishSpeed = fishSpeed;
         }
     }
 }

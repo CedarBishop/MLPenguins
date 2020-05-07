@@ -38,7 +38,7 @@ public class PenguinAgent : Agent
         }
         else if (vectorAction[1] == 2.0f)
         {
-            turnAmount = -1.0f;
+            turnAmount = 1.0f;
         }
 
         rigidbody.MovePosition(transform.position + transform.forward * forwardAmount * movementSpeed * Time.fixedDeltaTime);
